@@ -14,6 +14,18 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        document.getElementById("run").addEventListener("click", function() {
+
+            // your code here
+            var squareNrs = [];
+    
+            for(let i = 2; i < 21; i+=2){
+                squareNrs.push(Math.pow(i, 2));
+                
+            }
+            alert("The even square numbers between 1 and 21 are: " + squareNrs.join('-'))
+    
+        });
 
     });
 
