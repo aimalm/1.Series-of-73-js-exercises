@@ -12,10 +12,14 @@
 (function() {
 
     // to get the value of an input: document.getElementById("element-id").value
-
+    let numbers = document.getElementById("numbers").value;
+    
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        arr = JSON.parse ("["+numbers+"]");
+        numbers = arr.sort(function(a, b){return a-b});
+        document.getElementById("numbers").value = numbers;
 
     });
 
