@@ -11,6 +11,7 @@
 
 (function() {
 
-    // your code here
+    var personName = prompt("What is your name?");
+    window.alert("Hello " + personName )
 
 })();
