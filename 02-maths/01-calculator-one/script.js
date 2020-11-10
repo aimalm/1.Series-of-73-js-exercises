@@ -10,21 +10,34 @@
 // You will have time to focus on it later.
 
 (function() {
-    // to get the value of an input: document.getElementById("element-id").value
+        
+
 
     document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+        var number1 =parseInt(document.getElementById("op-one").value);
+        var number2 =parseInt(document.getElementById("op-two").value);
+           
+        window.alert(number1 + number2);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        var number1 =parseInt(document.getElementById("op-one").value);
+        var number2 =parseInt(document.getElementById("op-two").value);
+           
+        window.alert(number1 - number2);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+        var number1 =parseInt(document.getElementById("op-one").value);
+        var number2 =parseInt(document.getElementById("op-two").value);
+           
+        window.alert(number1 * number2);
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        var number1 =parseInt(document.getElementById("op-one").value);
+        var number2 =parseInt(document.getElementById("op-two").value);
+           
+        window.alert(number1 / number2);
     });
 })();

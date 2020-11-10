@@ -11,23 +11,23 @@
 
 (function() {
 
-    let age;
-    let gender;
-    let city;
+  let age;
+  let gender;
+  let city;
 
-    do {
-      age = prompt("what is your age?");
-    } while (!age);
-    confirm("your age is " + age);
+  do {
+    age = prompt("what is your age?");
+  } while (!age);
+  confirm("your age is " + age);
 
-    do {
-      gender = prompt("what is your gender?");
-    } while (!gender);
-    confirm("you are " + gender);
+  do {
+    gender = prompt("what is your gender?");
+  } while (!gender);
+  confirm("you are " + gender);
 
-    do {
-      city = prompt("what is your city?");
-    } while (!city);
-    confirm("your city is " + city);
+  do {
+    city = prompt("what is your city?");
+  } while (!city);
+  confirm("your city is " + city);
        
 })();
