@@ -17,6 +17,6 @@
      window.alert("congratulate and thank you for your response!")
    } else{
      window.alert(" More cake for me then :p ! ") 
-   }
+    }
 
 })();
