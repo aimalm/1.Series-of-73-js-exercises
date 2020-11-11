@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
+    for(let i=0;i<=100; i++)
+
+    console.log( (i%3 ? '':'fizz') + (i%5 ? '':'buzz') || i)
+
 
 })();
