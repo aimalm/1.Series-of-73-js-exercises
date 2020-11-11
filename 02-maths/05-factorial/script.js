@@ -12,10 +12,25 @@
 (function() {
     
     // to get the value of an input: document.getElementById("element-id").value
+    let value;
+    document.getElementById("number").value
 
     document.getElementById("run").addEventListener("click", function() {
-
+        value = document.getElementById("number").value
         // your code here
+        alert(factorial(value))
+
+        function factorial(value) {
+            if (value < 0) {
+                  return -1;
+            }
+            else if (value == 0){ 
+                return 1;
+            }
+            else {
+                return (value * factorial(value - 1));
+            }
+          }
 
     });
 
