@@ -12,10 +12,21 @@
 (function() {
 
     // your code here
-    document.getElementById("run").addEventListener("click", function (){
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        document.body.style.backgroundColor = "#" + randomColor;
-        document.getElementById("result").innerHTML = "#" + randomColor;
-    });
+  
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btn = document.getElementById("run");
+
+btn.addEventListener("click", function(){
+    let hexColor = "#";
+
+    for(let i=0; i < 6; i++){
+        hexColor += hex[getRandomNumber()]
+    }
+    document.body.style.backgroundColor = hexColor
+});
+
+function getRandomNumber(){
+    return Math.floor (Math.random() * hex.length);
+}
 
 })();
