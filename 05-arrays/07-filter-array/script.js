@@ -90,5 +90,15 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(function(item){
+            if(item.age > 18 ){
+                newArray=[];
+                newArray.push(item)
+                console.log(newArray)
+            }
+
+        })
+    })
 
 })();
