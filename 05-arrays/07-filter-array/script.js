@@ -88,17 +88,31 @@
             age: 81,
         },
     ];
-
+console.log(people)
     // your code here
     document.getElementById("run").addEventListener("click", function(){
-        people.forEach(function(item){
-            if(item.age > 18 ){
-                newArray=[];
-                newArray.push(item)
-                console.log(newArray)
-            }
+        //using foreach loop
+        /* newArray=[];
 
+         people.forEach(function(item){
+            if(item.age > 18 ){
+                newArray.push(item)
+            }
+            console.log(newArray)
+
+
+        })*/
+        
+        // using filter method
+
+         function over18(value) {
+            return value.age > 18
+          }
+          
+          let filtered = people.filter(over18)
+          console.log(filtered)
+          
         })
-    })
+
 
 })();
