@@ -88,7 +88,6 @@
             age: 81,
         },
     ];
-console.log(people)
     // your code here
     document.getElementById("run").addEventListener("click", function(){
         //using foreach loop
