@@ -27,7 +27,14 @@
         "raisin",
         "cerise",
     ];
+    //console.log(fruits)
 
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        let newArray = new Set(fruits);
+        console.log(newArray)
+
+    })
+   
 
 })();
