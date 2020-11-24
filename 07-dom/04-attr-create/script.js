@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+      // your code here
+    const soure = document.getElementById("source");
+    let getSourece = soure.getAttribute("data-image");
+    
+    let myFigure = document.getElementById("target");
 
-    // your code here
+    let img = document.createElement("img");
+    img.src = getSourece
 
+    myFigure.appendChild(img)
+    source.remove();
+  
 })();
