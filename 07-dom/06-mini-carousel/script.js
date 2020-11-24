@@ -18,16 +18,19 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
-console.log(gallery[0])
     // your code here
+    
+    let index =0;
+
     document.querySelector("#next").addEventListener("click", function(){
-
-
+      
+        let image = document.querySelector("img");
+        image.src = gallery[index];
         
-
-        for ( let i = 0; i < gallery.length; i++){
-        document.querySelector("img").src = gallery[i];
-
+        if(index === 4){
+            index = 0
+        }else {
+            index++
         }
     })
 
