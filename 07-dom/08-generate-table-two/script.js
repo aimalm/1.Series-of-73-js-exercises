@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    let div = document.getElementById("target");
+
+    let table = document.createElement("table");
+    div.appendChild(table)
+
+    let tbody = document.createElement("tbody");
+    table.appendChild(tbody);
+
+    for (let i = 1; i <=10 ; i++){
+        let tr = document.createElement("tr")
+        tr.className = "rows"
+        tbody.appendChild(tr);
+        for (let j = 1; j <= 10; j++){
+            let td = document.createElement("td");
+            tr.appendChild(td); 
+            td.textContent = (j * i) 
+        }
+    }
 
 })();
