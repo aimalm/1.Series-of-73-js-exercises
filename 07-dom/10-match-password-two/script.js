@@ -13,4 +13,20 @@
 
     // your code here
 
+    const passOne = document.getElementById("pass-one");
+    const passTwo = document.getElementById("pass-two");
+
+    document.getElementById("run").addEventListener("click", () =>{
+        console.log(1)
+        if(passOne.value !== passTwo.value){
+            console.log(2)
+            passOne.classList.add("error");
+            passTwo.classList.add("error");
+        } else{
+            passOne.classList.remove("error");
+            passTwo.classList.remove("error");
+        }
+
+    });
+
 })();
