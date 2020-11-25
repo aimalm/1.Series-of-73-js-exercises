@@ -19,19 +19,19 @@
         "../../_shared/img/map.svg",
     ];
     // your code here
-    
     let index =0;
+    
 
     document.querySelector("#next").addEventListener("click", function(){
-      
+
         let image = document.querySelector("img");
         image.src = gallery[index];
-        
         if(index === 4){
             index = 0
         }else {
             index++
         }
+        
     })
 
 })();

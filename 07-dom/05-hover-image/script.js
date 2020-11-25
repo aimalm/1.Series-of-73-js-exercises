@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
-
+    let image = document.querySelector("figure img");
+    let oldSrc = image.src;
+    let newSrc = image.getAttribute("data-hover");
+    
+    image.onmouseover = function() { 
+        image.src = newSrc;
+      } 
+      image.onmouseout = function() { 
+        image.src = oldSrc;
+      } 
 })();
