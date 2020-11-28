@@ -26,5 +26,13 @@
         os: "linux",
         user: null,
     };
+
     // your code here
+    document.getElementById('run').addEventListener('click', () => {
+         for (let i = 0; i < computers.length; i++) {
+
+          computers[i] = { ...defaultProps, ...computers[i] };
+     }
+        console.log(computers);
+      });
 })();
