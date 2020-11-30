@@ -10,7 +10,37 @@
 // You will have time to focus on it later.
 
 (function() {
+    let newText =["Welcome To Our Website"]
+    let index = 0;
+    let count = 0;
+    let currentText = "";
+    let letter="";
 
-    // your code here
+
+    const text = document.getElementById("target");
+    
+    function typing() {
+        if (count === newText.length){
+            count = 0;
+        }
+        
+        currentText = newText[count]
+        letter = currentText.slice(0, ++index)
+
+        text.innerHTML = letter;
+
+        if (letter.length === currentText.length){
+            count++;
+            index = 0;
+        }
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+          }
+           
+          setTimeout(typing, getRndInteger(100, 600));
+        
+    }
+    typing()
 
 })();
