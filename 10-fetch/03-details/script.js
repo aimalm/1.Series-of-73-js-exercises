@@ -27,10 +27,10 @@
       
         response.json().then(function (heroes) {
 
-           
+           let validMatch = false;
             for(var i = 0; i < heroes.length; i++) {
                 if (heroes[i].id == id) {
-                    
+                  validMatch = true;
                     //console.log(heroes[i].id)
                     var heroElement = tem.content.cloneNode(true);
                     heroElement.querySelector('.name').innerHTML = heroes[i].name;
@@ -39,15 +39,15 @@
                     targetElement.appendChild(heroElement);
                     break
 
-                } /* else {
-                    let invalidMsg = document.createElement("h2");
-                    invalidMsg.innerHTML = "Invalid"
-                    targetElement.appendChild(invalidMsg);
-                } */
+                }  
                 
 
              };
-             
+             if (!validMatch){
+              let invalidMsg = document.createElement("h2");
+              invalidMsg.innerHTML = "Invalid User ID"
+              targetElement.appendChild(invalidMsg);
+             }
         });
       }
     );
